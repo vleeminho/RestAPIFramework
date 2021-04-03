@@ -1,0 +1,172 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Verify if place is being successfuly added using AddPlaceAPI",
+        "description": "",
+        "id": "validating-addplace-api;verify-if-place-is-being-successfuly-added-using-addplaceapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1084173100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add Place Payload with \"Vrushali Nagawade\" \"French-IN\" \"29, side layout, cohen 09\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Vrushali Nagawade",
+                  "offset": 24
+                },
+                {
+                  "val": "French-IN",
+                  "offset": 44
+                },
+                {
+                  "val": "29, side layout, cohen 09",
+                  "offset": 56
+                }
+              ],
+              "location": "Steps.add_Place_Payload_with(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1300246900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User call \"AddPlaceAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AddPlaceAPI",
+                  "offset": 11
+                },
+                {
+                  "val": "POST",
+                  "offset": 30
+                }
+              ],
+              "location": "Steps.user_call_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3330700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The API Call get Success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "Steps.the_API_Call_get_Success_with_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 485840700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 1
+                },
+                {
+                  "val": "OK",
+                  "offset": 30
+                }
+              ],
+              "location": "Steps.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9776400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "scope",
+                  "offset": 1
+                },
+                {
+                  "val": "APP",
+                  "offset": 29
+                }
+              ],
+              "location": "Steps.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2200344000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify place_id created maps to \"Vrushali Nagawade\" using \"GetPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Vrushali Nagawade",
+                  "offset": 33
+                },
+                {
+                  "val": "GetPlaceAPI",
+                  "offset": 59
+                }
+              ],
+              "location": "Steps.verify_place_id_created_maps_to_using(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@AddPlace"
+          },
+          {
+            "line": 3,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validating AddPlace API",
+    "description": "",
+    "id": "validating-addplace-api",
+    "keyword": "Feature",
+    "uri": "placeValidations.feature"
+  }
+]
