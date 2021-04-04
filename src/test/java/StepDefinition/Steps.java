@@ -98,6 +98,8 @@ public class Steps extends Utilities{
 		resp=given().spec(requestSpecification()).body(TestDataBuild.deletePlacePayload(place_id));
 		System.out.println("Response is change made by X ::"+resp);
 		System.out.println("New line added by X");
+		
+		System.out.println("Made chnages in develop branch");
 	    
 	}
 
