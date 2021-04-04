@@ -96,7 +96,8 @@ public class Steps extends Utilities{
 	public void deleteplace_Payload() throws Throwable {
 	    System.out.println("PlaceId is ::"+place_id);
 		resp=given().spec(requestSpecification()).body(TestDataBuild.deletePlacePayload(place_id));
-		System.out.println("Response is ::"+resp);
+		System.out.println("Response is change made by X ::"+resp);
+		System.out.println("New line added by X");
 	    
 	}
 
