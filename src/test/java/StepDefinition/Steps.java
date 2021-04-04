@@ -100,6 +100,8 @@ public class Steps extends Utilities{
 		System.out.println("New line added by X");
 		
 		System.out.println("Made chnages in develop branch");
+
+		System.out.println("Made chnages in develop branch by X person");
 	    
 	}
 
